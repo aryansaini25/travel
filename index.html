@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Itinerary Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>TripPlanner</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Flights</a></li>
+                <li><a href="hotel.html">Hotels</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Plan Your Perfect Trip</h2>
+            <p>Search flights, hotels, and activities all in one place.</p>
+            <form onsubmit="event.preventDefault(); searchTrips();"> <!-- Form action removed to handle submission via JS -->
+                <input type="text" name="destination" placeholder="Enter Destination">
+                <input type="date" name="start_date">
+                <input type="date" name="end_date">
+                <input type="submit" value="Search">
+            </form>
+        </section>
+
+        <section class="search-results">
+            <!-- Results will dynamically load here -->
+        </section>
+
+        <section class="popular-destinations">
+            <h2>Popular Destinations</h2>
+            <div class="destinations">
+                <div class="destination-card">
+                    <img src="paris.jpeg" alt="Paris">
+                    <h3>Paris</h3>
+                </div>
+                <div class="destination-card">
+                    <img src="newyork.jpeg" alt="New York">
+                    <h3>New York</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TripPlanner. All rights reserved.</p>
+    </footer>
+</body>
+</html>

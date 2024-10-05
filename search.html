@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - TripPlanner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>TripPlanner</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-results">
+            <h2>Search Results for Your Trip</h2>
+            <div class="result-category">
+                <h3>Available Flights</h3>
+                <ul>
+                    <li>Flight 123 - $350 - Departure: 10:00 AM</li>
+                    <li>Flight 456 - $450 - Departure: 2:00 PM</li>
+                    <!-- Add more flight results -->
+                </ul>
+            </div>
+
+            <div class="result-category">
+                <h3>Available Hotels</h3>
+                <ul>
+                    <li>Hotel Paris - $150/night</li>
+                    <li>Hotel New York - $200/night</li>
+                    <!-- Add more hotel results -->
+                </ul>
+            </div>
+
+            <div class="result-category">
+                <h3>Available Activities</h3>
+                <ul>
+                    <li>Eiffel Tower Tour - $50</li>
+                    <li>Broadway Show - $100</li>
+                    <!-- Add more activity results -->
+                </ul>
+            </div>
+
+            <form action="confirmation.html" method="POST">
+                <h3>Complete Your Booking</h3>
+                <input type="text" name="flight_choice" placeholder="Enter Flight Number">
+                <input type="text" name="hotel_choice" placeholder="Enter Hotel Name">
+                <input type="text" name="activity_choice" placeholder="Enter Activity Name">
+                <input type="submit" value="Book Now">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TripPlanner. All rights reserved.</p>
+    </footer>
+</body>
+</html>
